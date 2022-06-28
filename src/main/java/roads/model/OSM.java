@@ -1,6 +1,5 @@
 package roads.model;
 
-import javax.swing.text.html.HTML;
 import java.util.List;
 
 public class OSM {
@@ -9,7 +8,7 @@ public class OSM {
     private List<Way> way;
     private List<Relation> relation;
 
-    public OSM(String bounds, List<Node> node, List<Way> way, List<Relation> relation) {
+    public OSM() {
         this.bounds = bounds;
         this.node = node;
         this.way = way;
@@ -42,5 +41,21 @@ public class OSM {
                 ", way=" + way +
                 ", relation=" + relation +
                 '}';
+    }
+
+    public void setBounds(String bounds) {
+        this.bounds = bounds;
+    }
+
+    public void setNode(List<Node> node) {
+        this.node = node;
+    }
+
+    public void setWay(List<Way> way) {
+        this.way = way;
+    }
+
+    public void setRelation(List<Relation> relation) {
+        this.relation = relation;
     }
 }

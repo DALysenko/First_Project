@@ -1,5 +1,7 @@
 package roads.model;
 
+import org.w3c.dom.NodeList;
+
 public class Node {
     private String tag;
 
@@ -16,4 +18,6 @@ public class Node {
                 "tag='" + tag + '\'' +
                 '}';
     }
+
+
 }
