@@ -89,9 +89,9 @@ public class Main {
                     continue;
                 }
 
-                NamedNodeMap atributes = tagChilds.item(i).getAttributes();
-                Node n = atributes.getNamedItem("k");
-                k = n.getNodeValue();
+                NamedNodeMap atributes = tagChilds.item(i).getAttributes(); //показал программе существование атрибутов
+                Node n = atributes.getNamedItem("k"); // объясняем программе, что мы берем только по атрибут "к"
+                k = n.getNodeValue(); //вводим в переменную значение атрибута "к"
 
                 switch (tagChilds.item(i).getNodeValue()) {
                     case "k": {
