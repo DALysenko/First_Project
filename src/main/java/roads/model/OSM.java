@@ -8,6 +8,7 @@ public class OSM {
     private List<Way> way;
     private List<Relation> relation;
 
+
     public OSM() {
         this.bounds = bounds;
         this.node = node;
